@@ -199,7 +199,7 @@ The output becomes LOW only when both inputs are HIGH. For all other input combi
 
 #### Transistor-Level Schematic
 
-![CMOS NAND Schematic](schematics/cmos_nand2_transistor_schematic.png)
+![CMOS NAND Schematic](schematics/layout.png)
 
 **Explanation:**
 
