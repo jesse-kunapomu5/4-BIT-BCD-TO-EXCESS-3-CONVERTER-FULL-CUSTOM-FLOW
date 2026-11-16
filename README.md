@@ -167,7 +167,7 @@ When the input is HIGH, the NMOS turns ON and the output becomes LOW.
 
 #### Transistor-Level Schematic
 
-![CMOS Inverter Schematic](schematics/cmos_inverter_transistor_schematic.png)
+![CMOS Inverter Schematic](schematics/inverterschematic.png)
 
 **Explanation:**
 
@@ -175,7 +175,7 @@ The above screenshot shows the transistor-level schematic of the CMOS inverter d
 
 #### Inverter Symbol
 
-![Inverter Symbol](symbols/inverter_symbol.png)
+![Inverter Symbol](symbols/invertersymbol.png)
 
 **Explanation:**
 
@@ -199,7 +199,7 @@ The output becomes LOW only when both inputs are HIGH. For all other input combi
 
 #### Transistor-Level Schematic
 
-![CMOS NAND Schematic](schematics/layout.png)
+![CMOS NAND Schematic](schematics/nandschematic.png)
 
 **Explanation:**
 
@@ -209,7 +209,7 @@ This gate is used extensively in the BCD-to-Excess-3 converter to implement the 
 
 #### NAND Symbol
 
-![NAND Symbol](symbols/nand2_symbol.png)
+![NAND Symbol](symbols/nandsymbol.png)
 
 **Explanation:**
 
@@ -233,7 +233,7 @@ The output becomes HIGH only when both inputs are LOW.
 
 #### Transistor-Level Schematic
 
-![CMOS NOR Schematic](schematics/cmos_nor2_transistor_schematic.png)
+![CMOS NOR Schematic](schematics/norschematic.png)
 
 **Explanation:**
 
@@ -243,7 +243,7 @@ The PMOS transistors are connected in series to form the pull-up network, while 
 
 #### NOR Symbol
 
-![NOR Symbol](symbols/nor2_symbol.png)
+![NOR Symbol](symbols/norsymbol.png)
 
 **Explanation:**
 
@@ -282,7 +282,7 @@ Z = D_bar
 
 ### Complete Circuit Schematic
 
-![BCD to Excess-3 Complete Schematic](schematics/bcd_to_excess3_top_level_schematic.png)
+![BCD to Excess-3 Complete Schematic](schematics/bcdtoexcess3schematic.png)
 
 **Explanation:**
 
@@ -306,7 +306,7 @@ The pulse sources are configured to generate the required binary input combinati
 
 ### 7.1 Input A Pulse Configuration
 
-![Input A Pulse Configuration](simulations/input_A_pulse_configuration.png)
+![Input A Pulse Configuration](simulations/inputA.png)
 
 **Explanation:**
 
@@ -316,7 +316,7 @@ Its pulse period is selected to generate the required binary counting sequence.
 
 ### 7.2 Input B Pulse Configuration
 
-![Input B Pulse Configuration](simulations/input_B_pulse_configuration.png)
+![Input B Pulse Configuration](simulations/inputB_pulse.png)
 
 **Explanation:**
 
@@ -326,7 +326,7 @@ The timing of this input is selected to generate the appropriate binary input co
 
 ### 7.3 Input C Pulse Configuration
 
-![Input C Pulse Configuration](simulations/input_C_pulse_configuration.png)
+![Input C Pulse Configuration](simulations/inputC.png)
 
 **Explanation:**
 
@@ -336,7 +336,7 @@ It generates the third bit of the binary counting sequence and contributes to te
 
 ### 7.4 Input D Pulse Configuration
 
-![Input D Pulse Configuration](simulations/input_D_pulse_configuration.png)
+![Input D Pulse Configuration](simulations/inputD.png)
 
 **Explanation:**
 
@@ -346,7 +346,7 @@ It toggles at the highest frequency in the binary counting sequence.
 
 ### 7.5 Combined Input and Output Waveforms
 
-![Combined Simulation Waveforms](simulations/combined_input_output_waveforms.png)
+![Combined Simulation Waveforms](simulations/simulation.png)
 
 **Explanation:**
 
@@ -378,7 +378,7 @@ The layout represents the physical implementation of the MOS transistors and the
 
 ### Final Layout
 
-![Full Custom Layout](layout/full_custom_layout.png)
+![Full Custom Layout](layout/layout.png)
 
 **Explanation:**
 
@@ -478,26 +478,26 @@ BCD-to-Excess-3-Converter/
 ├── README.md
 │
 ├── schematics/
-│   ├── cmos_inverter_transistor_schematic.png
-│   ├── cmos_nand2_transistor_schematic.png
-│   ├── cmos_nor2_transistor_schematic.png
-│   └── bcd_to_excess3_top_level_schematic.png
+│   ├── inverterschematic.png
+│   ├── nandschematic.png
+│   ├── norschematic.png
+│   └── bcdtoexcess3schematic.png
 │
 ├── symbols/
-│   ├── inverter_symbol.png
-│   ├── nand2_symbol.png
-│   └── nor2_symbol.png
+│   ├── invertersymbol.png
+│   ├── nandsymbol.png
+│   └── norsymbol.png
 │
 ├── simulations/
-│   ├── input_A_pulse_configuration.png
-│   ├── input_B_pulse_configuration.png
-│   ├── input_C_pulse_configuration.png
-│   ├── input_D_pulse_configuration.png
-│   ├── combined_input_output_waveforms.png
+│   ├── inputA.png
+│   ├── inputB.png
+│   ├── inputC.png
+│   ├── inputD.png
+│   ├── simulation.png
 │   └── additional_waveform_view.png
 │
 ├── layout/
-│   └── full_custom_layout.png
+│   └── layout.png
 │
 └── verification/
     ├── assura_drc_results.png
