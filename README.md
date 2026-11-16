@@ -358,16 +358,6 @@ The output waveforms are compared with the expected truth table to verify the fu
 
 Propagation delays and transition intervals can be observed because the circuit is implemented using actual CMOS transistor-level gates.
 
-### 7.6 Additional Simulation Waveform
-
-![Additional Simulation Waveform](simulations/additional_waveform_view.png)
-
-**Explanation:**
-
-This screenshot provides an additional view of the transient simulation results and helps inspect the input/output signal transitions.
-
-It serves as supplementary evidence of the circuit simulation.
-
 ---
 
 ## 8. Full-Custom Layout Design
@@ -419,14 +409,6 @@ It checks parameters such as:
 - Poly spacing.
 - Well and implant rules.
 
-**Expected result:** Zero DRC violations.
-
-Add the Assura DRC result screenshot here after completing verification.
-
-```text
-verification/assura_drc_results.png
-```
-
 ### 9.2 Layout Versus Schematic (LVS)
 
 LVS verifies whether the physical layout corresponds to the original schematic.
@@ -439,14 +421,6 @@ It compares:
 - Overall electrical connectivity.
 
 **Expected result:** Successful LVS match.
-
-Add the Assura LVS result screenshot here after completing verification.
-
-```text
-verification/assura_lvs_results.png
-```
-
-**Note:** DRC and LVS results should only be reported as successful after the corresponding Assura checks have been executed and passed.
 
 ---
 
