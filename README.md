@@ -316,7 +316,7 @@ Its pulse period is selected to generate the required binary counting sequence.
 
 ### 7.2 Input B Pulse Configuration
 
-![Input B Pulse Configuration](simulations/inputB_pulse.png)
+![Input B Pulse Configuration](simulations/inputB.png)
 
 **Explanation:**
 
